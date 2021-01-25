@@ -4,6 +4,7 @@ package alg
 func Levenshtein(target, input string) int { // nolint: funlen
 	// Example
 	// ref: https://www.datacamp.com/community/tutorials/fuzzy-string-python
+	// ref optimized version in go: https://github.com/sajari/fuzzy/blob/master/fuzzy.go#L236
 	lenTarget := len(target)
 	lenInput := len(input)
 	numCols := lenTarget + 1
